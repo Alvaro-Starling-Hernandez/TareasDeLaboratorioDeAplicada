@@ -1114,11 +1114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alvar\\OneDrive\\Escritorio\\Alvaro-PC\\Aplicada1\\TareasDeLaboratorio\\RegistroEstudiantesWPF\\RegistroEstudiantesWPF.csproj",
+      "projectUniqueName": "C:\\Users\\alvar\\OneDrive\\Escritorio\\Alvaro-PC\\Aplicada1\\TareasLaboratorio1\\RegistroEstudiantesWPF\\RegistroEstudiantesWPF.csproj",
       "projectName": "RegistroEstudiantesWPF",
-      "projectPath": "C:\\Users\\alvar\\OneDrive\\Escritorio\\Alvaro-PC\\Aplicada1\\TareasDeLaboratorio\\RegistroEstudiantesWPF\\RegistroEstudiantesWPF.csproj",
+      "projectPath": "C:\\Users\\alvar\\OneDrive\\Escritorio\\Alvaro-PC\\Aplicada1\\TareasLaboratorio1\\RegistroEstudiantesWPF\\RegistroEstudiantesWPF.csproj",
       "packagesPath": "C:\\Users\\alvar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alvar\\OneDrive\\Escritorio\\Alvaro-PC\\Aplicada1\\TareasDeLaboratorio\\RegistroEstudiantesWPF\\obj\\",
+      "outputPath": "C:\\Users\\alvar\\OneDrive\\Escritorio\\Alvaro-PC\\Aplicada1\\TareasLaboratorio1\\RegistroEstudiantesWPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alvar\\AppData\\Roaming\\NuGet\\NuGet.Config",
