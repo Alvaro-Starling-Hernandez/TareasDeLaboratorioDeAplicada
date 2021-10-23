@@ -33,6 +33,7 @@ namespace RegistroCondetalle.BLL
 
             return permiso;
         }
+
         public static List<Permisos> GetPermisos()
         {
             List<Permisos> lista = new List<Permisos>();
@@ -51,6 +52,7 @@ namespace RegistroCondetalle.BLL
             }
             return lista;
         }
+
         public static List<Permisos> GetList(Expression<Func<Permisos, bool>> criterio)
         {
             List<Permisos> Lista = new List<Permisos>();

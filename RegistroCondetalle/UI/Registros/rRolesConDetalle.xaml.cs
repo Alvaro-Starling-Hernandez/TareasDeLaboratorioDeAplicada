@@ -110,22 +110,7 @@ namespace RegistroCondetalle.UI.Registros
             if (!ValidarGuardar())
                 return;
             bool paso = false;
-
-            if (rol.RolId == 0)
-            {
-                paso = RolesBLL.Guardar(rol);
-            }
-            else
-            {
-                if (ExisteEnLaBaseDeDatos())
-                {
-                    paso = RolesBLL.Guardar(rol);
-                }
-                else
-                {
-                    MessageBox.Show("No existe en la base de datos", "ERROR");
-                }
-            }
+            paso = RolesBLL.Guardar(rol);
 
             if (paso)
             {
@@ -163,7 +148,7 @@ namespace RegistroCondetalle.UI.Registros
                 RolId = rol.RolId,
                 PermisoId = (int)PermisosComboBox.SelectedValue,
                 esAsignado = true,
-                PermisoDescripcion = PermisosComboBox.SelectionBoxItem.ToString()
+                PermisoDescripcion = ((Permisos)PermisosComboBox.SelectedItem).Descripcion
             });
 
             Cargar();
