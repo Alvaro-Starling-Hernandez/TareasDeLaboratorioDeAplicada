@@ -15,7 +15,7 @@ namespace RegistroCondetalle.BLL
         {
 
             Contexto contexto = new Contexto();
-            Permisos permiso;
+            Permisos permiso = new Permisos();
 
             try
             {

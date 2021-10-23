@@ -22,7 +22,6 @@ namespace RegistroCondetalle.UI.Registros
     public partial class rRolesConDetalle : Window
     {
         private Roles rol = new Roles();
-        private Permisos permiso = new Permisos();
 
         public rRolesConDetalle()
         {
@@ -31,7 +30,7 @@ namespace RegistroCondetalle.UI.Registros
 
             PermisosComboBox.ItemsSource = PermisosBLL.GetPermisos();
             PermisosComboBox.SelectedValuePath = "PermisoId";
-            PermisosComboBox.DisplayMemberPath = "Descripcion";
+            PermisosComboBox.DisplayMemberPath = "Nombre";
         }
 
         private void Cargar()
@@ -43,9 +42,8 @@ namespace RegistroCondetalle.UI.Registros
         {
             this.rol = new Roles();
             this.DataContext = rol;
-            this.permiso = new Permisos();
-            this.DataContext = permiso;
         }
+
         private bool Validar()
         {
             bool esValido = true;
@@ -57,6 +55,7 @@ namespace RegistroCondetalle.UI.Registros
             }
             return esValido;
         }
+
         private bool ValidarGuardar()
         {
             bool esValido = true;
@@ -164,6 +163,7 @@ namespace RegistroCondetalle.UI.Registros
                 RolId = rol.RolId,
                 PermisoId = (int)PermisosComboBox.SelectedValue,
                 esAsignado = true,
+                PermisoDescripcion = PermisosComboBox.SelectionBoxItem.ToString()
             });
 
             Cargar();

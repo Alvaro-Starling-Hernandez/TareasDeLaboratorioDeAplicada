@@ -41,6 +41,7 @@ namespace RegistroCondetalle.BLL
 
             return paso;
         }
+
         private static bool Modificar(Roles rol)
         {
             bool paso = false;
@@ -77,7 +78,7 @@ namespace RegistroCondetalle.BLL
 
             try
             {
-                var rol = RolesBLL.Buscar(id);
+                var rol = contexto.Roles.Find(id);
 
                 if (rol != null)
                 {
@@ -99,12 +100,12 @@ namespace RegistroCondetalle.BLL
 
         public static Roles Buscar(int id)
         {
-            Roles tarea = new Roles();
+            Roles rol = new Roles();
             Contexto contexto = new Contexto();
 
             try
             {
-                tarea = contexto.Roles.Include(x => x.RolesDetalle)
+                rol = contexto.Roles.Include(x => x.RolesDetalle)
                     .Where(x => x.RolId == id)
                     .SingleOrDefault();
             }
@@ -116,7 +117,7 @@ namespace RegistroCondetalle.BLL
             {
                 contexto.Dispose();
             }
-            return tarea;
+            return rol;
         }
 
         public static bool Existe(int id)

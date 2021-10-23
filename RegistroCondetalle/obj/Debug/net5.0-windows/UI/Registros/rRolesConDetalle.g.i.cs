@@ -141,7 +141,7 @@ namespace RegistroCondetalle.UI.Registros {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RegistroCondetalle;V1.0.0.0;component/ui/registros/rrolescondetalle.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RegistroCondetalle;component/ui/registros/rrolescondetalle.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\UI\Registros\rRolesConDetalle.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
